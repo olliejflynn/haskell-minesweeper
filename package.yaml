@@ -1,0 +1,26 @@
+name:                minesweeper
+version:             0.1.0.0
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+
+dependencies:
+- base >= 4.7 && < 5
+- threepenny-gui
+- vector
+- random
+
+executables:
+  minesweeper: 
+    main: minesweeper.hs
+
+# GThese options are global (because they are not indented into an 'executables' stanza)
+source-dirs: src
+ghc-options:
+  - -rtsopts
+
